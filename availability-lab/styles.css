@@ -44,3 +44,36 @@
   border: var(--dashed-border);
 }
 
+#legend {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;   
+  gap: 10px;          
+}
+
+#legend-gradient {
+  height: 20px;
+  width: 50%;
+  border: var(--solid-border);
+  background-image: linear-gradient(
+    90deg,
+    var(--color0) 0%,   
+    var(--color0) 10%, 
+    var(--color1) 10%,  
+    var(--color1) 30%,  
+    var(--color2) 30%,  
+    var(--color2) 50%,  
+    var(--color3) 50%,  
+    var(--color3) 70%,  
+    var(--color4) 70%,  
+    var(--color4) 90%,  
+    var(--color5) 90%,  
+    var(--color5) 100%
+  );
+}
+
+#legend-numbers {
+  display: flex; 
+  justify-content: space-between; 
+}
+
