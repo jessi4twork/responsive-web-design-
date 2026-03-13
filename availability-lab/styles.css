@@ -10,6 +10,8 @@
 
 }
 
+
+
 .available-0 {
   background-color: var(--color0);
 }
@@ -34,4 +36,11 @@
   background-color: var(--color5);
 }
 
+.sharp td {
+  border: var(--solid-border);
+}
+
+.half td {
+  border: var(--dashed-border);
+}
 
