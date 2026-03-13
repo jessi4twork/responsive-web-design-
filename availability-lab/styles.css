@@ -1,0 +1,37 @@
+:root {
+  --color0: #fff;
+  --color1: #ff9;
+  --color2: #ff0;
+  --color3: #9f0;
+  --color4: #0f0;
+  --color5: #0f9;
+  --solid-border: 1px solid black;
+  --dashed-border: 1px dashed black;
+
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+
