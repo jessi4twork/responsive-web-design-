@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #f4f1ea;
+  --color1-alt: #e8e4d8;
+  --color2: #222222;
+  --color2-alt: #444444;
+}
+
+body {
+  background-color: var(--color1);
+  color: var(--color2);
+
+  padding: 0 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: Courier, monospace;
+}
+
+p {
+  font-family: 'Courier New', serif;
+}
+
+.newspaper-layout {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
+  gap: 0.5rem;
+  grid-template-areas: 
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3"
+}
+
+.title {
+  grid-area: title;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.cover-image img {
+  max-width: 100%;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.title h1,
+.feature-article h2,
+.secondary-article h2,
+p {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
