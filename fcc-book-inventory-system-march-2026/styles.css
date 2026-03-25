@@ -1,0 +1,93 @@
+
+span {
+  display: inline-block;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to top left, #e0f1f2, #b2dfdb)
+}
+tr[class="in-progress"] {
+  background-image: linear-gradient(#e0f1a0, #b2dfdb);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient( to bottom right, #e0f1a0, #ffdfdb)
+}
+
+span[class="status"], span[class^="rate"] {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  line-height: 1;
+  height: auto;
+  width: auto;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid #ccc;
+  background-image: linear-gradient(
+    to bottom, 
+    #fff 0%, 
+    #cec 15%, 
+    #aea 85%, 
+    #8c4 100%
+  );
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #ccc;
+  background-image: linear-gradient(
+    to bottom, 
+    #fff 0%, 
+    #fea 15%, 
+    #fd9 85%, 
+    #8c4 100%
+  );
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #ccc;
+  background-image: linear-gradient(#e3f2fd, #bbdefd);
+}
+
+span[class^="rate"] {
+   display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #ccc;
+  margin: 2px;
+  height: 15px;
+  width: 15px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+span[class~="one"] > span:first-child {
+ background: linear-gradient(
+#fff 0%, 
+#fd5 40%, 
+#cb7 100%
+ );
+  border-color: #ccc;
+  }
+
+span[class~="two"] > span:nth-child(-n+2) {
+ background: linear-gradient(
+#fff 0%, 
+#fd5 40%, 
+#cb7 100%
+ );
+  border-color: #ccc;
+  }
+
+span[class~="three"] > span {
+ background: linear-gradient(
+  #fff 0%, 
+  #fd5 40%, 
+  #cb7 100% );
+  border-color: #ccc;
