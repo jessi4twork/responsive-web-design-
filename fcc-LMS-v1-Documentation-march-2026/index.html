@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>LMS v1.0 Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#System_Architecture">System Architecture</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Data_Acquisition">Data Acquisition</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Lead_Scoring">Lead Scoring</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Workflow_Mapping">Workflow Mapping</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Security_Protocols">Security Protocols</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="System_Architecture">
+        <header>System Architecture</header>
+        <p>The LMS v1.0 is a centralized framework designed for high efficiency lead tracking and conversion optimization.</p>
+        <p>This structure ensures data integrity across all lead channels.</p>
+        <code>type: "Lead_Management_System"</code>
+        <ul>
+          <li>Centralized Lead Tracking</li>
+          <li>Automated Workflow Mapping</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Data_Acquisition">
+        <header>Data Acquisition</header>
+        <p>This phase focuses on standardized protocols for importing leads into the Notion environment.</p>
+        <p>All incoming data must be validated for accuracy before the lead scraping database is updated.</p>
+        <code>input: ["LinkedIn", "Web Scrape"]</code>
+        <ul>
+          <li>LinkedIn Lead Extraction</li>
+          <li>Web Scraping Validation</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Lead_Scoring">
+        <header>Lead Scoring</header>
+        <p>Priority is determined via a ruthless "Urgency vs. Importance" formula to rank high-value targets.</p>
+        <p>High-scoring lead are prioritized for immediate outreach to maximize conversion effieciency.</p>
+        <code>priority = urgency + importance;</code>
+        <ul>
+          <li>Urgency vs. Importance Weighting</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Workflow_Mapping">
+        <header>Workflow Mapping</header>
+        <p>The system tracks the lead cycle through distinct phases: Scraping, Qualified, and Contacted.</p>
+        <p>Status updates are mapped daily to identify bottlenecks and ensure no lead remains stagnant.</p>
+        <code>status= "active_outreach";</code>
+      </section>
+      <section class="main-section" id="Security_Protocols">
+        <header>Security Protocols</header>
+        <p>Privacy is maintained through a "Zero-footprint" strategy, masking sensitive client identifiers.</p>
+        <p>All temporary data is purged weekly to ensure that no redundant information remains in the sytem.</p>
+        <code>access_level = "private";</code>
+      </section>
+    </main>
+  </body>
+</html>
